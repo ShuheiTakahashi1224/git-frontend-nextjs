@@ -4,5 +4,9 @@ import Home from '../pages/index'
 
 it('Should render title text', () => {
   render(<Home />)
-  expect(screen.getByText('Next.js!')).toBeInTheDocument()
+  expect(
+    screen.getByText(
+      'Discover and deploy boilerplate example Next.js projects.'
+    )
+  ).toBeInTheDocument()
 })
